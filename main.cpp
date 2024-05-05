@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+    // DATA
     const string studentArray[] = { 
         "A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY", 
         "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK", 
@@ -14,11 +15,8 @@ int main()
         "A5,Keana,Garciano-Whitton,kcobar2@wgu.edu,20,22,50,58,40,SOFTWARE" 
     };
 
-    for (int i = 0; i < 5; i++)
-    {
-        cout << studentArray[i];
-    };
-    cout << "Hello World!\n";
+    // ATTENTION - FA
+    cout << "Course Title: C867\nLanguage: C++\nStudent ID: 011093703\nName: Keana Renea Garciano-Whitton\n";
 
     return 0;
 }
