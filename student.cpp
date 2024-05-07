@@ -28,10 +28,11 @@ Student::Student(string studentID, string firstName, string lastName, string ema
 
 Student::~Student() {};
 
-/* SETTING ACCESSORS AND MUTATORS */
+/* SETTING ACCESSORS AND MUTATORS, RESPECTIVELY */
 string Student::getstudentID() { return this->studentId; }
 string Student::getfirstName() { return this->firstName; }
 string Student::getlastName() { return this->lastName; }
+string Student::getemailAddress(){ return this->emailAddress;}
 int Student::getAge() { return this->age; }
 int* Student::getdays() { return this->days; };
 DegreeProgram Student::getDegreeProgram(){ return this->degreeProgram; }
@@ -46,3 +47,14 @@ void Student::setDays(int days[])
 	for (int i = 0; i < daysArraySize; i++) { this->days[i] = days[i]; }
 }
 void Student::setDegreeProgram(DegreeProgram degreeProgram) { this->degreeProgram = degreeProgram; }
+
+void Student::print()
+{
+	cout << this->getstudentID() << '\t';
+	cout << this->getfirstName() << '\t';
+	cout << this->getlastName() << '\t';
+	cout << this->getemailAddress() << '\t';
+	cout << this->getAge() << '\t';
+	cout << this->getdays() << '\t';
+	cout << this->getDegreeProgram() << '\t';
+};

@@ -45,8 +45,6 @@ public:
 	void setDays(int days[]);
 	void setDegreeProgram(DegreeProgram degreeProgram);
 
-	static void printHeader();
-
 	void print();
 
 };
