@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "student.h"
+#include "degree.h"
 using namespace std;
 
 // SETTING CONSTRUCTORS + DECONSTRUCTORS
@@ -56,5 +57,5 @@ void Student::print()
 	cout << this->getemailAddress() << '\t';
 	cout << this->getAge() << '\t';
 	cout << this->getdays() << '\t';
-	cout << this->getDegreeProgram() << '\t';
+	cout << degreeProgramStrings[this->getDegreeProgram()] << '\t';
 };
