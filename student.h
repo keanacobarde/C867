@@ -16,7 +16,7 @@ private:
 	string lastName;
 	string emailAddress;
 	int age;
-	int days[daysArraySize];
+	string days[daysArraySize];
 	DegreeProgram degreeProgram;
 
 	/* CONSTRUCTORS AND DECONSTRUCTORS */

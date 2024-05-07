@@ -1,25 +1,16 @@
 #pragma once
 #include <iostream>
+#include "student.h"
 using namespace std;
 
-class Student {
-	public:
-		const static int daysArraySize = 4;
-	public:
-		void setfirstName(string x)
-		{
-			firstname = x;
-		};
-		string getfirstName()
-		{
-			return firstname;
-		}
-	private: 
-		int studentId;
-		string firstName;
-		string lastName;
-		string emailAddress;
-		int age;
-		int days[daysArraySize];
-		string degreeProgram;
+// SETTING CONSTRUCTORS
+Student::Student()
+{
+	this->studentId = 0;
+	this->firstName = "";
+	this->lastName = "";
+	this->emailAddress = "";
+	this->age = 0;
+	for (int i = 0; i < daysArraySize; i++) this->days[i] = "";
+	this->degreeProgram = DegreeProgram::UNDECIDED;
 };

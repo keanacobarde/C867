@@ -3,8 +3,8 @@ using namespace std;
 
 // Enumerated Strings
 enum DegreeProgram { 
-	NETWORK, SECURITY, SOFTWARE  
+	NETWORK, SECURITY, SOFTWARE, UNDECIDED  
 };
 
-static const string degreeProgramStrings[] = {"NETWORK", "SECURITY", "SOFTWARE"};
+static const string degreeProgramStrings[] = { "NETWORK", "SECURITY", "SOFTWARE", "UNDECIDED"};
 
