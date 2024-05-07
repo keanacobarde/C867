@@ -11,18 +11,18 @@ public:
 
 	/* OBJECT SHAPE */
 private:
-	int studentId;
+	string studentId;
 	string firstName;
 	string lastName;
 	string emailAddress;
 	int age;
-	string days[daysArraySize];
+	int days[daysArraySize];
 	DegreeProgram degreeProgram;
 
 	/* CONSTRUCTORS AND DECONSTRUCTORS */
 public:
 	Student();
-	Student(int studentID, string firstName, string lastName, string emailAddress, int age, string days[], DegreeProgram degreeProgram);
+	Student(string studentID, string firstName, string lastName, string emailAddress, int age, int days[], DegreeProgram degreeProgram);
 	~Student();
 
 	/* ACCESORS AND MUTATORS */
@@ -33,16 +33,16 @@ public:
 	string getlastName();
 	string getemailAddress();
 	int getAge();
-	string* getdays();
+	int* getdays();
 	DegreeProgram getDegreeProgram();
 
 	//MUTATORS
-	void setstudentId(int ID);
+	void setstudentId(string ID);
 	void setfirstName(string firstname);
 	void setlastName(string lastname);
 	void setemailAddress(string emailAddress);
 	void setAge(int age);
-	void setDays(string days[]);
+	void setDays(int days[]);
 	void setDegreeProgram(DegreeProgram degreeProgram);
 
 	static void printHeader();
